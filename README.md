@@ -3,13 +3,13 @@ Using Node.js for automatic device provisioning towards Azure
 
 ## Usage
 For the device enrollment script to work, we first need to setup our Azure infrastructure.
+We can create this with Azure CLI for Windows. [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?SilentAuth=1&activetab=pivot:overviewtab) lets use connect to Azure Cloud Shell to perform the commands:
 
 ### Requirements
-- IoT Hub
-- Device Provisioning Service
+- Azure CLI for Windows ([Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?SilentAuth=1&activetab=pivot:overviewtab))
 - Change elastic-resource to your own resource group name in commands below.
 - Change devhub-iot to your own resource group name in commands below.
-- If you get an error, it most likely means that the name you chose has been picked already.
+- If you get an error, it most likely means that the name you chose has already been picked.
 
 ## 1. Initial Azure Infrastructure
 ### a. Create IoT Hub
