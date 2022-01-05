@@ -1,5 +1,5 @@
 # Node-CLI
-Using Node.js for automatic device provisioning towards Azure
+Using Node.js for automatic device provisioning towards Azure   
 [What is Azure IoT Hub Device Provisioning Service?](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
 
 - [Node-CLI](#node-cli)
@@ -20,6 +20,7 @@ We can create this with Azure CLI for Windows. [Windows Terminal](https://www.mi
 - Azure CLI for Windows ([Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?SilentAuth=1&activetab=pivot:overviewtab))
 - Change elastic-resource to your own resource group name in commands below.
 - Change devhub-iot to your own resource group name in commands below.
+  (the easiest way is to copy this guide and do a search & replace for your own names)
 - If you get an error, it most likely means that the name you chose has already been picked.
 
 ## 1. Initial Azure Infrastructure
