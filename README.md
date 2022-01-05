@@ -1,5 +1,6 @@
 # Node-CLI
 Using Node.js for automatic device provisioning towards Azure
+[What is Azure IoT Hub Device Provisioning Service?](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
 
 - [Node-CLI](#node-cli)
   * [Setup](#setup)
