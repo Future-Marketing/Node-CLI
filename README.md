@@ -1,7 +1,17 @@
 # Node-CLI
 Using Node.js for automatic device provisioning towards Azure
 
-## Usage
+- [Node-CLI](#node-cli)
+  * [Setup](#setup)
+    + [Requirements](#requirements)
+  * [1. Initial Azure Infrastructure](#1-initial-azure-infrastructure)
+    + [a. Create IoT Hub](#a-create-iot-hub)
+    + [b. Create Device Provisioning Service](#b-create-device-provisioning-service)
+  * [2. Create enrollment sample in node.js](#2-create-enrollment-sample-in-nodejs)
+    + [Requirements:](#requirements-)
+  * [3. CLI Usage](#3-cli-usage)
+
+## Setup
 For the device enrollment script to work, we first need to setup our Azure infrastructure.
 We can create this with Azure CLI for Windows. [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?SilentAuth=1&activetab=pivot:overviewtab) lets use connect to Azure Cloud Shell to perform the commands:
 
@@ -58,8 +68,8 @@ $env:dpsConnectionString=$(az iot dps connection-string show --dps-name auto -o 
 ```
 echo $env:dpsConnectionString
 ```
-# 2. Create enrollment sample in node.js
-## Requirements:
+## 2. Create enrollment sample in node.js
+### Requirements:
 Your system variables should have connection strings saved to them. 
 Try this with "echo" command, it should display connection strings.
 * npm install azure-iot-provisioning-service
@@ -69,7 +79,7 @@ Try this with "echo" command, it should display connection strings.
 AToAAQALAAMAsgAgg3GXZ0SEs/gakMyNRqXXJP1S124GUgtk8qHaGzMUaaoABgCAAEMAEAgAAAAAAAEAxsj2gUScTk1UjuioeTlfGYZrrimExB+bScH75adUMRIi2UOMxG1kw4y+9RW/IVoMl4e620VxZad0ARX2gUqVjYO7KPVt3dyKhZS3dkcvfBisBhP1XH9B33VqHG9SHnbnQXdBUaCgKAfxome8UmBKfe+naTsE5fkvjb/do3/dD6l4sGBwFCnKRdln4XpM03zLpoHFao8zOwt8l/uP3qUIxmCYv9A7m69Ms+5/pCkTu/rK4mRDsfhZ0QLfbzVI6zQFOKF/rwsfBtFeWlWtcuJMKlXdD8TXWElTzgh7JS4qhFzreL0c1mI0GCj+Aws0usZh7dLIVPnlgZcBhgy1SSDQMQ==
 * (for production you need to create your own endorsement key)
 
-## CLI Usage
+## 3. CLI Usage
 The Node CLI takes 2 parameters on launch.
 ```
 node-dps.js <dps connection string> <endorsement key>
