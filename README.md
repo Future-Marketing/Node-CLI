@@ -1,3 +1,4 @@
+Tutorial quality responsibility: [@noor-latif ](https://github.com/noor-latif)
 # Node-CLI
 Using Node.js for automatic device provisioning towards Azure   
 [What is Azure IoT Hub Device Provisioning Service?](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
